@@ -4,7 +4,7 @@
 		module="sparktwitter_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20170703164256"
+		publication="20170703221331"
 	>
 		<description>
 		SparkTwitter
@@ -37,5 +37,7 @@
 		<dependency org="org.apache.spark" name="spark-core_2.11" rev="2.1.1" conf="compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming-twitter_2.11" rev="1.5.1" conf="provided->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-streaming_2.11" rev="1.5.1" conf="provided->default(compile)"/>
+		<dependency org="org.apache.hadoop" name="hadoop-client" rev="2.6.5" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-core_2.10" rev="2.1.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

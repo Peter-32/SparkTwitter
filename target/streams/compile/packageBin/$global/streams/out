@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mPackaging /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/sparktwitter_2.11-1.0.jar ...[0m
+[0m[[0minfo[0m] [0mPackaging /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/sparktwitter_2.11-0.0.1.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/JSONDBLoader.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/JSONDBLoader.class[0m
@@ -10,6 +10,8 @@
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/MapReduceExample.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/MapReduceExample$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/MapReduceExample$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	twitter4j.properties[0m
+[0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/twitter4j.properties[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/MapReduceExample$$anonfun$4.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/MapReduceExample$$anonfun$4.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/SimpleApp$$anonfun$2.class[0m
@@ -30,6 +32,8 @@
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/Reporter.class[0m
 [0m[[0mdebug[0m] [0m	io/github[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github[0m
+[0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/TwitterStream$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/TwitterStream$.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/MapReduceExample$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/MapReduceExample$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/MapReduceExample$.class[0m
@@ -38,6 +42,8 @@
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/MapReduceExample$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/Main.class[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/Main.class[0m
+[0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter/TwitterStream.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter/TwitterStream.class[0m
 [0m[[0mdebug[0m] [0m	io/github/peter32/spark/twitter[0m
 [0m[[0mdebug[0m] [0m	  /Users/peterjmyers/Documents/Projects/SparkTwitter/target/scala-2.11/classes/io/github/peter32/spark/twitter[0m
 [0m[[0minfo[0m] [0mDone packaging.[0m

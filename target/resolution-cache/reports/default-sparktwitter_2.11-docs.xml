@@ -4,10 +4,10 @@
 	<info
 		organisation="default"
 		module="sparktwitter_2.11"
-		revision="1.0"
+		revision="0.0.1"
 		conf="docs"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20170703164256"/>
+		date="20170704114315"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>
