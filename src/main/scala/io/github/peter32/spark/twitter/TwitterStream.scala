@@ -27,6 +27,7 @@ object SecondValueOrdering extends Ordering[(String, Int)] {
 object TwitterStream {
   val SLIDE_INTERVAL = Seconds(1);
   val WINDOW_LENGTH = Seconds(5);
+  val OUTPUT_DIRECTORY = "spark_streaming_results.txt"
 
   println("Initializing Streaming Spark Context...")
   val conf = new SparkConf().setAppName("wordCount")
@@ -47,40 +48,6 @@ object TwitterStream {
   val windowedhashTagCountStream = hashTagStream.map((_, 1)).reduceByKeyAndWindow((x: Int, y: Int) => x + y, WINDOW_LENGTH, SLIDE_INTERVAL)
 
   windowedhashTagCountStream.foreachRDD(hashTagCountRDD => {
-    val topEndpoints = hashTagCountRDD.top(10)(SecondValueOrdering)
-    dbutils.fs.put(s"${outputDirectory}/top_hashtags_${num}", topEndpoints.mkString("\n"), true)
-    println(s"------ TOP HASHTAGS For window ${num}")
-    println(topEndpoints.mkString("\n"))
-    num = num + 1
+    hashTagCountRDD.saveAsTextFile("pride_and_prejudice_sorted_by_length.txt")
   })
-
-  newContextCreated = true
-  ssc
-
-
-/*
-
-VISIT: https://apps.twitter.com/   to get auth tokens for data project set up
-
-
-
-
- */
-
-
-    /*.createStream(ssc, Utils.getAuth)
-    .map(gson.toJson(_))
-
-  tweetStream.foreachRDD((rdd, time) => {
-    val count = rdd.count()
-    if (count > 0) {
-      val outputRDD = rdd.repartition(partitionsEachInterval)
-      outputRDD.saveAsTextFile(
-        outputDirectory + "/tweets_" + time.milliseconds.toString)
-      numTweetsCollected += count
-      if (numTweetsCollected > numTweetsToCollect) {
-        System.exit(0)
-      }
-    }
-  })*/
 }
