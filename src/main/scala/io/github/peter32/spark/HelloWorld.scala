@@ -1,3 +1,4 @@
+package io.github.peter32.spark
 /**
   * Created by peterjmyers on 7/3/17.
   */

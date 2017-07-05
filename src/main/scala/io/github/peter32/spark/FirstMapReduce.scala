@@ -1,10 +1,9 @@
 package io.github.peter32.spark
-
-import org.apache.spark.{SparkConf, SparkContext}
-
 /**
   * Created by peterjmyers on 7/1/17.
   */
+import org.apache.spark.{SparkConf, SparkContext}
+
 object FirstMapReduce {
   def main(args: Array[String]) {
     val conf = new SparkConf().setAppName("wordCount")
