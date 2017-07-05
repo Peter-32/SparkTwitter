@@ -13,14 +13,12 @@ object FirstStream {
     val conf = new SparkConf().setAppName("twitterStreaming")
     val sc = new SparkContext(conf)
     val ssc = new StreamingContext(sc, Seconds(5))
-
     val tweetStream = TwitterUtils.createStream(ssc, None)
+    // Determine the type of outputs the stream should have before running ssc.start()
+    tweetStream.print() // output to the console
+    tweetStream.saveAsTextFiles("data_output/twitter", "txt") // output to files
 
-    tweetStream.print() // to console
-    tweetStream.saveAsTextFiles("data_output/twitter", "txt") // to file
-    // tweetStream.foreachRDD(_.saveToMongoDB())
     ssc.start()
-
     ssc.awaitTermination()
   }
 }
