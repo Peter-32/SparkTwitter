@@ -1,5 +1,4 @@
-I want to read in Twitter API with Spark and Scala and save it into a JSON database.  The keyword to search in the public
-feeds will be "spark".  I want to be able to look at a sample of the results.
+I want to read in Twitter API with Spark and Scala.
 
 
 

@@ -4,7 +4,7 @@
 		module="sparktwitter$sources_2.11"
 		revision="0.0.1"
 		status="integration"
-		publication="20170704114322"
+		publication="20170704180040"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

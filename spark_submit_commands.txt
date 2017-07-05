@@ -1,0 +1,18 @@
+sbt package
+
+/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-1.5.1/bin/spark-submit \
+--class "io.github.peter32.spark.HelloWorld" \
+--master "local[4]" \
+target/scala-2.10/sparktwitter_2.10-0.0.1.jar
+
+/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-1.5.1/bin/spark-submit \
+--class "io.github.peter32.spark.FirstMapReduce" \
+--master "local[4]" \
+target/scala-2.10/sparktwitter_2.10-0.0.1.jar
+
+
+/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-1.5.1/bin/spark-submit \
+--class "io.github.peter32.spark.twitter.FirstStream" \
+--jars org.apache.bahir:spark-streaming-twitter_2.11:2.0.1, org.twitter4j:twitter4j-core:4.0.4, org.twitter4j:twitter4j-stream:4.0.4 \
+--master "local[4]" \
+target/scala-2.11/sparktwitter_2.11-0.0.1.jar
