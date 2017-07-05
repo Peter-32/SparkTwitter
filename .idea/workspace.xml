@@ -2,21 +2,214 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb1c6a7-a5c1-4b7d-8143-323c8c5749b2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dictionary.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/classes/io/github/peter32/spark/FirstMapReduce$.class" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/io/github/peter32/spark/FirstMapReduce$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.11/sparktwitter_2.11-0.0.1.jar" afterPath="$PROJECT_DIR$/target/scala-2.11/sparktwitter_2.11-0.0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/inputs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215740000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215740000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/.part-00015.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00015" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215750000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215755000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00015.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00016.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/.part-00017.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00015" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00016" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215760000.txt/part-00017" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215765000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00001.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00002.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00003.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00004.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00005.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00006.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00007.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00008.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00009.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00010.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00011.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00012.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00013.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00014.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00015.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/.part-00016.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00007" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00009" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00015" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_output/twitter-1499215770000.txt/part-00016" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_submit_commands.txt" afterPath="$PROJECT_DIR$/spark_submit_commands.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" afterPath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" afterPath="$PROJECT_DIR$/target/streams/compile/incCompileSetup/$global/streams/inc_compile_2.11" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/compile/packageBin/$global/streams/out" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,76 +250,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="part-00009" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00009">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00010" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00010">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00012" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00012">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00014" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00014">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00015" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00015">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00013" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00013">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00011" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_output/twitter-1499215745000.txt/part-00011">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="spark_submit_commands.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spark_submit_commands.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -141,7 +264,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -240,94 +363,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="compile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="$global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -377,38 +412,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_output" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twitter-1499218345000.txt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkTwitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data_output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1185,7 +1188,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
