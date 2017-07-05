@@ -68694,8 +68694,8 @@ coverings
 coverless
 coverlet
 coverlets
-coverlid
 coverlids
+coverlid
 coverly
 covernumber
 coverpage
