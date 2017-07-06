@@ -64,16 +64,16 @@ That's it!!  You're done creating the Twitter App!
 
 #### a) Add a twitter4j.properties File
 
-Create a "twitter4j.properties" file in directory src/main/resources which should include these four lines.  Replace "yourInputHere" with your access information.
+Create a "twitter4j.properties" file in directory src/main/resources which should include these four lines.  Replace "yourInputHere" with the information you copied from your Twitter App.
 
 	oauth.consumerKey=yourInputHere
 	oauth.consumerSecret=yourInputHere
 	oauth.accessToken=yourInputHere
 	oauth.accessTokenSecret=yourInputHere
 
-#### b) Update Spark Submit Commands File
+#### b) Update `spark-submit` Commands File
 
-- Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to `spark-submit`.  There are three commands to update with that change.
+- Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to `spark-submit`.  All three commands need to be updated with this change.
 - If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required if you use a zsh terminal.  I do not know if the quotations can cause an error.
 
 #### 4) Run a Console Command to Build
@@ -84,29 +84,45 @@ In the future, if you make a change to a Spark Scala project and you want to run
 
 #### 5) Run the Programs with `spark-submit`
 
-All commands are found in the `spark-submit_commands.txt` file.  The commands run the three applications.
+All commands are found in the `SparkTwitter/spark-submit_commands.txt` file.  Each command runs one of the three applications.
 
 ## FAQ
 
-### What If I Want a Different Spark or Scala Version?
+### Can I Use a Different Version of Spark or Scala?
+
+_This project uses Spark 2.0.1 and Scala 2.11_
+
+Sure!  Here are some things to keep in mind if you decide to use a different version of Spark or Scala.  
 
 1. The Scala and Spark versions need to be compatible with each other.
-2. The Scala or Spark versions need to be compatible with the two jars `src/lib/twitter4j-core` and `src/lib/twitter4j-stream`.  This project works with these jars using Scala 2.11 and Spark 2.0.1.
-3. Download a new `spark-streaming-twitter` jar.  The one included is `src/lib/spark-streaming-twitter_2.11-2.0.1.jar`.  The `2.11` stands for the Scala version and `2.0.1` is the Spark version.
-4. After changing out any jars from point 2 or 3 above, you need to update the  `spark_submit_commands.txt` file.  You will need to update the jars for the spark streaming command.  If you change the Scala version, be sure to update the `2.11` Scala version number found in all commands.
+2. The Scala or Spark versions need to be compatible with the two jars `src/lib/twitter4j-core` and `src/lib/twitter4j-stream`.  This project uses version 4.0.4 of these jars, and they appear to work with Spark 2.0.1 and Scala 2.11.
+3. Download a new `spark-streaming-twitter` jar.  The one included is `src/lib/spark-streaming-twitter_2.11-2.0.1.jar`.  The 2.11 stands for the Scala version and 2.0.1 is the Spark version.
+4. After changing out any jars from point 2 or 3 above, you need to update the  `spark_submit_commands.txt` file.  You will need to update the jars for the spark streaming command.  If you change the Scala version, be sure to also update the 2.11 Scala version number found in all commands.
+5. Update the `SparkTwitter/build` file with the Scala version.  Change the 2.0.1 numbers to the Spark version you are using.  The library dependency code can be found by searching the internet for the package (ie. "maven org.apache.spark").  When you find the maven command on the maven repository, look for an SBT tab to get the SBT code.  Once you're done with changes to the `SparkTwitter/build` file, click the prompt to rebuild the project with these configurations.
 
-### What Do the Parts of the SBT Mean?
+<center><img src="src/main/resources/sbt_code.png"></center>
 
-* **version:** The version is your build version.  If this changes from `0.0.1` you need to update the `spark-streaming-twitter.txt` file to reference the new version instead of `0.0.1`.
-* **scalaVersion:** The version of Scala.  This project uses Scala version `2.11.6`.
-* **`2.0.1`:** This number shows up in the library dependencies.  It references the Spark version used.
 
-### Why Are There Jars in src/lib Instead of Using the SBT (Simple Build Tool)
+### What Is Going on in the `SparkTwitter/build` File?
 
-I believe the Spark Submit needs to have them included in the command.  I put them in the src/lib folder so they are easy to reference by the command.
+* **version:** The version is your build version.  If this changes from 0.0.1 you need to update the `spark-streaming-twitter.txt` file to reference the new version instead of 0.0.1.
+* **scalaVersion:** The version of Scala.  This project uses Scala version 2.11.
+* **2.0.1:** This number shows up in the library dependencies section of this file.  The number corresponds with the Spark version used.  This project uses Spark 2.0.1.
+
+### Why Are There Jars in src/lib Instead of Using the SBT (Simple Build Tool)?
+
+I believe the `spark-submit` command has to reference the jars.  I put them in the src/lib folder so they are easy to reference when running `spark-submit`.
 
 ### What Is the Expected Output of Each Application?
 
-1. The HelloWorld application prints to the console.  You may have to search for it because of the verboseness of Spark.
+1. The HelloWorld application finds the number of a's and b's in a file and prints the results to the console on one line.  Spark's output to the console is verbose, so you have to look over multiple lines before you find this line of output.
 2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The result is a list of words sorted by length.  Other text files can be used instead of the `dictionary.txt` file.
 3. The FirstStream application outputs text to the console and tweets to the `SparkTwitter/data_output` directory.
+
+### How Do I Turn Off The StreamingContext?
+
+The hotkey should be the same for Windows, Mac, and Linux.
+
+- First you can try `Ctrl + c`.
+- If that doesn't work, try `Ctrl + z`.
+- Otherwise, close the terminal.
