@@ -5,6 +5,11 @@ package io.github.peter32.spark
 import org.apache.spark.{SparkConf, SparkContext}
 import java.io.File
 
+/**
+  * This can be used to confirm that Spark is working.
+  * The code is from the official Spark site's quick start tutorial.
+  * https://spark.apache.org/docs/latest/quick-start.html
+  */
 object HelloWorld {
   def main(args: Array[String]) {
     // The input file is the README.md to this project.

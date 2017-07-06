@@ -4,14 +4,21 @@ package io.github.peter32.spark
   */
 import org.apache.spark.{SparkConf, SparkContext}
 import java.io.File
+import scala.reflect.io.Path
+import scala.util.Try
 
+/**
+  * This gets one familiar with the MapReduce functionality available when using Spark Scala.
+  * It takes in a dictionary of words and outputs a file of words sorted by length.
+  */
 object FirstMapReduce {
   def main(args: Array[String]) {
     // The input file is the README.md to this project.
     // Get the absolute path to this input file.
     val inputFile = (new File("src/main/resources/dictionary.txt")).getAbsolutePath
-    // Delete the output file if it exists.  Otherwise returns false and doesn't throw an error.
-    new File("data_output/dictionary_sorted_by_length").delete()
+    // Delete the output directory if it exists.  Doesn't stop the program even if the files doesn't exist.
+    val path: Path = Path ("data_output/dictionary_sorted_by_length")
+    Try(path.deleteRecursively())
     // You get a conf and sc variable when starting a Spark application.
     // Getting a SparkConf and calling it conf.  Set the app name.
     val conf = new SparkConf().setAppName("wordCount")
