@@ -17,6 +17,11 @@ This project shows you how to get started with Spark Scala projects in an IDE.  
 
 ## Installation
 
+1. Create a Twitter App (Easy)
+2. Download Everything Needed
+3. Adding Your Personal Configurations
+4. Run a Console Command
+
 ### 1) Create a Twitter App (Easy)
 
 First, to get it out of the way, create a [Twitter app](https://apps.twitter.com/) here.  The application is created after you fill out a form.  You can put any placeholder when they ask for your website.
@@ -48,7 +53,11 @@ First, to get it out of the way, create a [Twitter app](https://apps.twitter.com
 
 - The Jars needed are already included in the directory src/lib
 
-### 3) Slight Changes Required
+#### Scala Plugin
+
+- Make sure your IDE has the Scala plugin.  If you're unsure, try searching online how to add the plugin for your IDE.
+
+### 3) Adding Your Personal Configurations
 
 #### a) Add a twitter4j.properties File
 
@@ -64,9 +73,9 @@ Create a "twitter4j.properties" file in directory src/main/resources which shoul
 - Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to spark-submit.  There are three commands to update.
 - If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required for the zsh termainal.
 
-#### Run a Command in the Terminal
+#### 4) Run a Console Command
 
-Run `sbt package` in the SparkTwitter directory.
+Run `sbt package` in the SparkTwitter directory.  After making changes to your Spark Scala projects, just run `sbt package` to prepare it for the spark-submit.
 
 ## FAQ
 
@@ -74,12 +83,18 @@ sbt versions?
 
 ### What If I Want a Different Spark or Scala Version?
 
-try installing different versions; scala version goes at end of sbt.  You need a connector to go with you rspark release for the Twitter API.
-
-You will need to update the
+1. The Scala and Spark versions need to be compatible with each other.
+2. The Scala or Spark versions need to be compatible with the two jars `src/lib/twitter4j-core` and `src/lib/twitter4j-stream`.  This project works with these jars using Scala 2.11 and Spark 2.0.1.
+3. Download a new `spark-streaming-twitter` jar.  The one included is `src/lib/spark-streaming-twitter_2.11-2.0.1.jar`.  The `2.11` stands for the Scala version and `2.0.1` is the Spark version.
+4. After changing out any jars from point 2 or 3 above, you need to update the  `spark_submit_commands.txt` file.  You will need to update the jars for the spark streaming command.  If you change the Scala version, be sure to update the `2.11` Scala version number found in all commands.
 
 ### What Do the Parts of the SBT Mean?
+
+* **version:** The version is your build version.  If this changes from `0.0.1` you need to update the `spark-streaming-twitter.txt` file to reference the new version instead of `0.0.1`.
+* **scalaVersion:** The version of Scala.  This project uses Scala version `2.11.6`.
+* **`2.0.1`:** This number shows up in the library dependencies.  It references the Spark version used.
 
 ### Why Are There Jars in src/lib Instead of Using the Sbt (Simple Build Tool)
 
 I believe the Spark Submit needs to have them included in the command.  I put them in the src/lib folder so they are easy to reference by the command.
+
