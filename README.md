@@ -12,8 +12,8 @@ This project shows you how to get started with Spark Scala projects in an IDE.  
 
 1. **HelloWorld Application**: This can be used to confirm that Spark is working.
   The code is from the official Spark site's [quick start tutorial](https://spark.apache.org/docs/latest/quick-start.html).
-2. **FirstMapReduce Application**: This gets one familiar with the MapReduce functionality available when using Spark Scala.  It takes in a dictionary of words and outputs a file sorting the words by length.
-3. **FirstStream Application**: This sets up a twitter spark streaming instance.  It collects tweets from Twitter in real time and outputs them to the console and files.
+2. **FirstMapReduce Application**: This gets one familiar with the MapReduce functionality available when using Spark Scala.  It takes in a dictionary of words and outputs a file of words sorted by length.
+3. **FirstStream Application**: This sets up a twitter spark streaming instance.  It shows tweets from Twitter in real time and saves them to a file.
 
 ## Installation
 
@@ -21,11 +21,11 @@ This project shows you how to get started with Spark Scala projects in an IDE.  
 2. Download Everything Needed
 3. Adding Your Personal Configurations
 4. Run a Console Command to Build
-5. Run the Programs with Spark-Submit
+5. Run the Programs with `spark-submit`
 
 ### 1) Create a Twitter App (Easy)
 
-First, to get it out of the way, create a [Twitter app](https://apps.twitter.com/) here.  The application is created after you fill out a form.  You can put any placeholder when they ask for your website.
+First create a [Twitter app](https://apps.twitter.com/) here.  The application is created after you fill out a form.  You can put any placeholder when they ask for your website.
 
 ![Twitter App page 1](src/main/resources/app_twitter_page1.png)
 
@@ -39,15 +39,17 @@ First, to get it out of the way, create a [Twitter app](https://apps.twitter.com
 
 #### Copy the Access Token and Access Token Secret to a Text File.
 
+That's it!!  You're done creating the Twitter App!
+
 ### 2) Download Everything Needed
 
-#### This code
+#### Get This Project
 
 - Clone or download this project and open it in an IDE like Intellij.
 
 #### Spark
 
-- Visit [Apache Spark](https://spark.apache.org/downloads.html) and select "Spark release": "2.0.1", "package type": "Pre-built for Apache Hadoop 2.7 and later".  Then click on "Download Spark": "spark-2.0.1-bin-hadoop2.7.tgz.
+- Visit [Apache Spark](https://spark.apache.org/downloads.html) and select "Spark release": "2.0.1", "package type": "Pre-built for Apache Hadoop 2.7 and later".  Then click on "Download Spark": "spark-2.0.1-bin-hadoop2.7.tgz".
 - Unzip the file and move it to your favorite software directory.
 
 #### Jars
@@ -56,7 +58,7 @@ First, to get it out of the way, create a [Twitter app](https://apps.twitter.com
 
 #### Scala Plugin
 
-- Make sure your IDE has the Scala plugin.  If you're unsure, try searching online how to add the plugin for your IDE.
+- Make sure your IDE has the Scala plugin.  You will know you have the plugin when you can create Scala classes in the `src/main/scala` directory.  If you're unsure, try searching online how to add the plugin for your IDE.
 
 ### 3) Adding Your Personal Configurations
 
@@ -71,14 +73,16 @@ Create a "twitter4j.properties" file in directory src/main/resources which shoul
 
 #### b) Update Spark Submit Commands File
 
-- Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to spark-submit.  There are three commands to update.
-- If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required for the zsh termainal.
+- Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to `spark-submit`.  There are three commands to update with that change.
+- If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required if you use a zsh terminal.  I do not know if the quotations can cause an error.
 
 #### 4) Run a Console Command to Build
 
-Run `sbt package` in the SparkTwitter directory.  After making changes to your Spark Scala projects, just run `sbt package` to prepare it for the spark-submit.
+Go to the SparkTwitter directory in your terminal and run `sbt package`.
 
-#### 5) Run the Programs with Spark-Submit
+In the future, if you make a change to a Spark Scala project and you want to run `spark-submit`, you must first run the command `sbt package`.
+
+#### 5) Run the Programs with `spark-submit`
 
 All commands are found in the `spark-submit_commands.txt` file.  The commands run the three applications.
 
@@ -104,5 +108,5 @@ I believe the Spark Submit needs to have them included in the command.  I put th
 ### What Is the Expected Output of Each Application?
 
 1. The HelloWorld application prints to the console.  You may have to search for it because of the verboseness of Spark.
-2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The dictionary is outputed by descending order of word length.
+2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The dictionary is outputed by descending order of word length.  Other text files can be used instead of the `dictionary.txt` file.
 3. The FirstStream application outputs text to the console and tweets to the `SparkTwitter/data_output` directory.
