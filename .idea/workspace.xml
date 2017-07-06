@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb1c6a7-a5c1-4b7d-8143-323c8c5749b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" afterPath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala" afterPath="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/spark_submit_commands.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -103,8 +105,8 @@
       <file leaf-file-name="HelloWorld.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="360">
+              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding>
                 <element signature="e#79#128#0" expanded="true" />
               </folding>
@@ -124,7 +126,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitter4j.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="twitter4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/twitter4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -134,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstMapReduce.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FirstMapReduce.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="46" />
+            <state relative-caret-position="355">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="38" />
               <folding>
                 <element signature="e#79#128#0" expanded="true" />
               </folding>
@@ -159,6 +161,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>StatusJSONImpl</find>
+      <find>pair</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,9 +191,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/twitter/FirstStream.scala" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/scala/Test123.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" />
         <option value="$PROJECT_DIR$/spark_submit_commands.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala" />
       </list>
     </option>
   </component>
@@ -198,7 +201,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="130" />
+    <option name="y" value="-1013" />
     <option name="width" value="1366" />
     <option name="height" value="790" />
   </component>
@@ -768,7 +772,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="790" extended-state="0" />
+    <frame x="130" y="-1013" width="1366" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -947,26 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="e#79#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="e#79#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/twitter/FirstStream.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -983,19 +967,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark_submit_commands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/twitter4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="69" lean-forward="false" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_submit_commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/HelloWorld.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#79#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/io/github/peter32/spark/FirstMapReduce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="e#79#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
