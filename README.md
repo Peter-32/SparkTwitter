@@ -108,5 +108,5 @@ I believe the Spark Submit needs to have them included in the command.  I put th
 ### What Is the Expected Output of Each Application?
 
 1. The HelloWorld application prints to the console.  You may have to search for it because of the verboseness of Spark.
-2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The dictionary is outputed by descending order of word length.  Other text files can be used instead of the `dictionary.txt` file.
+2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The result is a list of words sorted by length.  Other text files can be used instead of the `dictionary.txt` file.
 3. The FirstStream application outputs text to the console and tweets to the `SparkTwitter/data_output` directory.
