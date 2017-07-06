@@ -27,7 +27,7 @@ This project shows you how to get started with Spark Scala projects in an IDE.  
 
 First create a [Twitter app](https://apps.twitter.com/) here.  The application is created after you fill out a form.  You can put any placeholder when they ask for your website.
 
-<center>![Twitter App page 1](src/main/resources/app_twitter_page1.png)</center>
+<center> ![Twitter App page 1](src/main/resources/app_twitter_page1.png)</center>
 
 #### Once Created, Edit the App and Visit the Keys and Access Tokens Page.
 
