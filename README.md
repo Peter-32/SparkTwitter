@@ -2,7 +2,7 @@
 # SparkTwitter
 
 ## Summary
-This project shows you how to get started with Spark Scala projects in an IDE.  It starts with a "Hello World" application, then a simple MapReduce application, and lastly a Spark streaming application using the Twitter API.
+This project shows you how to get started with Spark Scala projects in an IDE.  It starts with a "Hello World!" application, then a simple MapReduce application, and lastly a Spark streaming application using the Twitter API.
 
 ## Example
 
@@ -20,7 +20,8 @@ This project shows you how to get started with Spark Scala projects in an IDE.  
 1. Create a Twitter App (Easy)
 2. Download Everything Needed
 3. Adding Your Personal Configurations
-4. Run a Console Command
+4. Run a Console Command to Build
+5. Run the Programs with Spark-Submit
 
 ### 1) Create a Twitter App (Easy)
 
@@ -73,13 +74,15 @@ Create a "twitter4j.properties" file in directory src/main/resources which shoul
 - Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to spark-submit.  There are three commands to update.
 - If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required for the zsh termainal.
 
-#### 4) Run a Console Command
+#### 4) Run a Console Command to Build
 
 Run `sbt package` in the SparkTwitter directory.  After making changes to your Spark Scala projects, just run `sbt package` to prepare it for the spark-submit.
 
-## FAQ
+#### 5) Run the Programs with Spark-Submit
 
-sbt versions?  
+All commands are found in the `spark-submit_commands.txt` file.  The commands run the three applications.
+
+## FAQ
 
 ### What If I Want a Different Spark or Scala Version?
 
@@ -94,7 +97,12 @@ sbt versions?
 * **scalaVersion:** The version of Scala.  This project uses Scala version `2.11.6`.
 * **`2.0.1`:** This number shows up in the library dependencies.  It references the Spark version used.
 
-### Why Are There Jars in src/lib Instead of Using the Sbt (Simple Build Tool)
+### Why Are There Jars in src/lib Instead of Using the SBT (Simple Build Tool)
 
 I believe the Spark Submit needs to have them included in the command.  I put them in the src/lib folder so they are easy to reference by the command.
 
+### What Is the Expected Output of Each Application?
+
+1. The HelloWorld application prints to the console.  You may have to search for it because of the verboseness of Spark.
+2. The MapReduceExample application outputs a file to the `SparkTwitter/data_output` directory.  The dictionary is outputed by descending order of word length.
+3. The FirstStream application outputs text to the console and tweets to the `SparkTwitter/data_output` directory.
