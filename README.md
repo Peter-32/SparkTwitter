@@ -29,7 +29,11 @@ This project shows you how to get started with Spark.  It starts with a "Hello W
 Easily create a [Twitter app](https://apps.twitter.com/) here.  The application is created easily after you fill out a form.  You can put a placeholder when they ask for your website.  Once the application is created
 
 ![Twitter App page 1](src/main/resources/app_twitter_page1.png)
+
+Once created, edit the app and visit the keys and access tokens page.
+
 ![Twitter App page 2 part 1](src/main/resources/app_twitter_page2_part1.png)
+
 ![Twitter App page 2 part 2](src/main/resources/app_twitter_page2_part2.png)
 
 #### Next
