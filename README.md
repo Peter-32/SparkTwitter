@@ -23,17 +23,17 @@ First, to get it out of the way, create a [Twitter app](https://apps.twitter.com
 
 ![Twitter App page 1](src/main/resources/app_twitter_page1.png)
 
-#### Once created, edit the app and visit the keys and access tokens page.
+#### Once Created, Edit the App and Visit the Keys and Access Tokens Page.
 
 ![Twitter App page 2 part 1](src/main/resources/app_twitter_page2_part1.png)
 
-#### Copy your Consumer Key and Consumer Secret to a text file.  Then click on the "create my access token" button.
+#### Copy Your Consumer Key and Consumer Secret to a Text File.  Then Click on The "Create My Access Token" Button.
 
 ![Twitter App page 2 part 2](src/main/resources/app_twitter_page2_part2.png)
 
-#### Copy the access token and access token secret to a text file.
+#### Copy the Access Token and Access Token Secret to a Text File.
 
-### 2) Download everything needed
+### 2) Download Everything Needed
 
 #### This code
 
@@ -46,9 +46,11 @@ First, to get it out of the way, create a [Twitter app](https://apps.twitter.com
 
 #### Jars
 
+- The Jars needed are already included in the directory src/lib
+
 ### 3) Slight Changes Required
 
-#### 1) Add a twitter4j.properties file
+#### a) Add a twitter4j.properties File
 
 Create a "twitter4j.properties" file in directory src/main/resources which should include these four lines.  Replace "yourInputHere" with your access information.
 
@@ -57,12 +59,27 @@ Create a "twitter4j.properties" file in directory src/main/resources which shoul
 	oauth.accessToken=yourInputHere
 	oauth.accessTokenSecret=yourInputHere
 
+#### b) Update Spark Submit Commands File
+
+- Open the file `"SparkTwitter/spark_submit_commands.txt"`.  Replace the code `/Users/peterjmyers/Documents/Other/No_Backup_Needed/spark-2.0.1-bin-hadoop2.7/bin/spark-submit` with your absolute file path to spark-submit.  There are three commands to update.
+- If you get an error later on with these commands, try again while removing the quotations around local[4].  The quotations are required for the zsh termainal.
+
+#### Run a Command in the Terminal
+
+Run `sbt package` in the SparkTwitter directory.
+
 ## FAQ
 
 sbt versions?  
 
-### What if I want a different Spark or Scala version?
+### What If I Want a Different Spark or Scala Version?
 
 try installing different versions; scala version goes at end of sbt.  You need a connector to go with you rspark release for the Twitter API.
 
-### What do the parts of the sbt mean?
+You will need to update the
+
+### What Do the Parts of the SBT Mean?
+
+### Why Are There Jars in src/lib Instead of Using the Sbt (Simple Build Tool)
+
+I believe the Spark Submit needs to have them included in the command.  I put them in the src/lib folder so they are easy to reference by the command.
